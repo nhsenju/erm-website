@@ -1,15 +1,15 @@
 :root{
   --bg:#FAFAF8;
-  --bg-alt:#F0F2F0;
-  --ink:#1C2B26;
-  --ink-soft:#4B5C55;
-  --green:#2F5D50;
-  --blue:#2C5F8A;
-  --cta:#E8622C;
-  --cta-dark:#C94F1F;
-  --border:#DDE3DF;
+  --bg-alt:#F2F3F7;
+  --ink:#090931;
+  --ink-soft:#253775;
+  --green:#002E5D;
+  --blue:#253775;
+  --cta:#DD9926;
+  --cta-dark:#002E5D;
+  --border:#D9DCE8;
   --radius:14px;
-  --shadow:0 4px 20px rgba(28,43,38,.06);
+  --shadow:0 4px 20px rgba(9,9,49,.06);
 
   --font-display:'Fraunces',serif;
   --font-body:'Inter',system-ui,sans-serif;
@@ -413,8 +413,8 @@ a{
 }
 
 .signature__before{
-  background:#C9CFC9;
-  color:#54615A;
+  background:#D7DAE5;
+  color:#4A506C;
 }
 
 .signature__after{
@@ -639,7 +639,7 @@ a{
 .progress{
   width:100%;
 
-  background:#DDE3DF;
+  background:#D9DCE8;
 
   border-radius:99px;
 
@@ -705,7 +705,7 @@ a{
 
 .choice.is-selected{
   border-color:var(--green);
-  background:#EAF2EE;
+  background:#EEF0F7;
   color:var(--green);
 }
 
@@ -961,7 +961,7 @@ textarea:focus{
 
   background:var(--ink);
 
-  color:#cfd8d4;
+  color:#D4D8E6;
 }
 
 .footer p{
@@ -969,7 +969,7 @@ textarea:focus{
 }
 
 .footer a{
-  color:#cfd8d4;
+  color:#D4D8E6;
 }
 
 .footer__nav{
@@ -1061,7 +1061,7 @@ textarea:focus{
     overflow-y:auto;
     overflow-x:hidden;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 10px 25px rgba(9,9,49,.08);
   }
 
   .nav__list a{
@@ -1430,7 +1430,7 @@ textarea:focus{
   font-weight: 800;
   letter-spacing: .08em;
 
-  box-shadow: 0 3px 10px rgba(0,0,0,.25);
+  box-shadow: 0 3px 10px rgba(9,9,49,.25);
   backdrop-filter: blur(4px);
 }
 
@@ -1439,7 +1439,7 @@ textarea:focus{
 }
 
 .signature__label--after {
-  background: rgba(47, 93, 80, .95);
+  background: rgba(40, 167, 69);
 }
 
 @media (max-width: 600px) {
