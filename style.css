@@ -1692,43 +1692,14 @@ h1{
   }
 }
 
-/* =========================================================
-   MOBILE CTA — SPAZIATURA OBBLIGATORIA
-   ========================================================= */
-
+/* MOBILE CTA — separazione definitiva */
 @media (max-width:699px){
-  .btn--cta + .btn--whatsapp{margin-top:20px !important;}
-  .btn--cta + .btn--whatsapp{margin-top:20px !important;}
   .cta-group{
     display:flex;
     flex-direction:column;
-    align-items:stretch;
-    gap:16px !important;
   }
 
-  .cta-group .btn{
-    width:100%;
-    margin-top:0 !important;
-    margin-bottom:0 !important;
-  }
-
-  .cta-group .btn--cta + .btn--whatsapp{
-    margin-top:0 !important;
-  }
-}
-
-/* =========================================================
-   MOBILE CTA — SEPARAZIONE DEFINITIVA
-   ========================================================= */
-
-@media (max-width:699px){
-  .btn--cta + .btn--whatsapp{margin-top:20px !important;}
-  .btn--cta + .btn--whatsapp{margin-top:20px !important;}
-  .btn--whatsapp{
-    margin-top:18px !important;
-  }
-
-  .hero__copy .btn--whatsapp{
-    margin-top:18px !important;
+  .cta-group .btn--whatsapp{
+    margin-top:20px !important;
   }
 }
