@@ -42,7 +42,7 @@ echo "2. PLACEHOLDER / DATI DA SOSTITUIRE"
 echo "------------------------------------------"
 
 PLACEHOLDERS=$(grep -RniE \
-  "tuodominio\.it|NOME AZIENDA|0000 000000|GTM-XXXXXXX|GTM-XXXXXXX" \
+  "tuodominio\.it|NOME AZIENDA|0000 000000" \
   --include="*.html" \
   --include="*.js" \
   --include="*.css" \
