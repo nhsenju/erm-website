@@ -1697,6 +1697,7 @@ h1{
    ========================================================= */
 
 @media (max-width:699px){
+  .btn--cta + .btn--whatsapp{margin-top:20px !important;}
   .cta-group{
     display:flex;
     flex-direction:column;
@@ -1720,6 +1721,7 @@ h1{
    ========================================================= */
 
 @media (max-width:699px){
+  .btn--cta + .btn--whatsapp{margin-top:20px !important;}
   .btn--whatsapp{
     margin-top:18px !important;
   }
