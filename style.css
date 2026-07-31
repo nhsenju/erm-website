@@ -1420,26 +1420,23 @@ textarea:focus{
   position: absolute;
   left: 14px;
   bottom: 14px;
-
   padding: 7px 14px;
   border-radius: 999px;
-
-  color: #fff;
+  background: var(--cta) !important;
+  color: var(--ink) !important;
   font-family: var(--font-body);
   font-size: .78rem;
   font-weight: 800;
   letter-spacing: .08em;
-
   box-shadow: 0 3px 10px rgba(9,9,49,.25);
   backdrop-filter: blur(4px);
 }
 
-.signature__label--before {
-  background: rgba(180, 45, 35, .92);
-}
-
-.signature__label--after {
-  background: rgba(40, 167, 69);
+.signature__label--before,
+.signature__label--after,
+.signature__label--auto {
+  background: var(--cta) !important;
+  color: var(--ink) !important;
 }
 
 @media (max-width: 600px) {
