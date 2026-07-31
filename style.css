@@ -1715,19 +1715,15 @@ h1{
   }
 }
 
-/* MOBILE — CTA DEFINITIVI */
+/* =========================================================
+   MOBILE CTA — SEPARAZIONE DEFINITIVA
+   ========================================================= */
+
 @media (max-width:699px){
-  .btn--cta + .btn--whatsapp,
-  .cta-group .btn--whatsapp,
-  .hero__copy .btn--whatsapp{
+  .btn--whatsapp{
     margin-top:18px !important;
   }
-}
 
-/* MOBILE — CTA DEFINITIVI */
-@media (max-width:699px){
-  .btn--cta + .btn--whatsapp,
-  .cta-group .btn--whatsapp,
   .hero__copy .btn--whatsapp{
     margin-top:18px !important;
   }
