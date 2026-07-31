@@ -1455,3 +1455,211 @@ textarea:focus{
     font-size: .72rem;
   }
 }
+
+/* =========================================================
+   CTA SYSTEM
+   Minimal · Elegant · Consistent
+   ========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+
+  min-height: 48px;
+  padding: 11px 18px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  font-family: var(--font-body);
+  font-size: .94rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .005em;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease;
+}
+
+/* CTA principale */
+.btn--cta {
+  background: var(--cta);
+  border-color: var(--cta);
+  color: var(--ink);
+
+  box-shadow:
+    0 2px 7px rgba(9, 9, 49, .07);
+}
+
+.btn--cta:hover {
+  background: #e0a039;
+  border-color: #e0a039;
+  color: var(--ink);
+
+  box-shadow:
+    0 4px 12px rgba(9, 9, 49, .10);
+
+  transform: translateY(-1px);
+}
+
+.btn--cta:active {
+  transform: translateY(0);
+  box-shadow:
+    0 2px 6px rgba(9, 9, 49, .07);
+}
+
+/* CTA grande */
+.btn--lg {
+  min-height: 50px;
+  padding: 12px 21px;
+  font-size: .96rem;
+}
+
+/* =========================================================
+   CTA GROUP
+   ========================================================= */
+
+.hero__copy .btn--cta {
+  margin-top: .35rem;
+}
+
+.hero__copy .trustlist {
+  margin-top: 1.05rem;
+}
+
+/* Due CTA vicine: spazio controllato */
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+  margin-top: 1rem;
+}
+
+/* =========================================================
+   WHATSAPP — secondaria, riconoscibile ma non dominante
+   ========================================================= */
+
+.btn--whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 11px 18px;
+
+  background: #25D366;
+  border: 1px solid #25D366;
+  border-radius: 10px;
+
+  color: #073b1d;
+  font-weight: 700;
+
+  box-shadow:
+    0 2px 7px rgba(9, 9, 49, .05);
+
+  transition:
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease;
+}
+
+.btn--whatsapp:hover {
+  background: #2bd96c;
+  border-color: #2bd96c;
+  color: #073b1d;
+
+  box-shadow:
+    0 4px 12px rgba(9, 9, 49, .08);
+
+  transform: translateY(-1px);
+}
+
+.btn--whatsapp:active {
+  transform: translateY(0);
+}
+
+/* =========================================================
+   MOBILE FIRST
+   ========================================================= */
+
+@media (max-width: 699px) {
+
+  .hero__copy .btn--cta,
+  .hero__copy .btn--whatsapp,
+  .cta-group .btn {
+    width: 100%;
+  }
+
+  .hero__copy .btn--cta {
+    margin-top: .35rem;
+  }
+
+  .hero__copy .btn--whatsapp {
+    margin-top: 0;
+  }
+
+  .cta-group {
+    width: 100%;
+    gap: .6rem;
+    margin-top: 1rem;
+  }
+}
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 700px) {
+
+  .cta-group {
+    flex-direction: row;
+    align-items: center;
+    gap: .65rem;
+  }
+
+  .cta-group .btn {
+    width: auto;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.btn:focus-visible {
+  outline: 3px solid rgba(221, 153, 38, .25);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .btn,
+  .btn--whatsapp {
+    transition: none;
+  }
+
+  .btn:hover,
+  .btn--whatsapp:hover {
+    transform: none;
+  }
+}
+
+
+/* Spazio verticale tra CTA su mobile */
+@media (max-width: 699px) {
+  .btn--whatsapp {
+    margin-top: 16px !important;
+  }
+}
