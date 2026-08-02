@@ -1709,3 +1709,370 @@ h1{
     margin-top:14px !important;
   }
 }
+
+/* =========================================================
+   CHI SIAMO — refinement layout
+   Mantiene il linguaggio visivo esistente
+   ========================================================= */
+
+/* Hero */
+.pagehero {
+  padding: 72px 0 68px;
+}
+
+.pagehero__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+  align-items: center;
+  gap: 64px;
+}
+
+.pagehero__content > div:first-child {
+  max-width: 680px;
+}
+
+.pagehero__content h1 {
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.pagehero__content p {
+  max-width: 620px;
+  margin-bottom: 0;
+}
+
+.pagehero__image {
+  width: 100%;
+  max-height: 430px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.pagehero__image img {
+  display: block;
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+
+/* Piccolo elemento introduttivo */
+.eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+
+/* Sezioni */
+.benefits {
+  padding: 82px 0;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .85fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.about__grid > div:first-child {
+  max-width: 680px;
+}
+
+.about__grid h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.about__grid p {
+  margin-bottom: 16px;
+}
+
+.about__grid p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Immagini secondarie */
+.about__image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.about__image img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+
+/* Storia della cooperativa */
+.about-story {
+  padding: 82px 0;
+}
+
+.about-story__grid {
+  display: grid;
+  grid-template-columns: minmax(320px, .85fr) minmax(0, 1fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.about-story__grid > div:first-child {
+  max-width: 650px;
+}
+
+.about-story h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.about-story p {
+  margin-bottom: 16px;
+}
+
+.about-story p:last-child {
+  margin-bottom: 0;
+}
+
+.about-story__image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.about-story__image img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+/* Intestazioni di sezione */
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.section-heading p {
+  margin-bottom: 14px;
+}
+
+.section-heading p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Cards */
+.benefits .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benefits .card {
+  padding: 28px 24px;
+}
+
+.card__number {
+  display: block;
+  margin-bottom: 20px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  opacity: .55;
+}
+
+.benefits .card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.benefits .card p {
+  margin: 0;
+}
+
+
+/* Immagine panoramica */
+.about-visual {
+  padding: 20px 0 82px;
+}
+
+.about-visual__figure {
+  margin: 0;
+}
+
+.about-visual__figure img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-visual__figure figcaption {
+  margin-top: 12px;
+  font-size: .82rem;
+  opacity: .65;
+}
+
+
+/* CTA */
+.finalcta {
+  padding: 82px 0;
+}
+
+.finalcta .wrap {
+  text-align: center;
+}
+
+.finalcta h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.finalcta p {
+  max-width: 560px;
+  margin: 0 auto 28px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .pagehero {
+    padding: 52px 0 56px;
+  }
+
+  .pagehero__content {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .pagehero__image {
+    max-height: 360px;
+  }
+
+  .pagehero__image img {
+    height: 360px;
+  }
+
+  .benefits,
+  .about-story {
+    padding: 64px 0;
+  }
+
+  .about__grid,
+  .about-story__grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .about-story__grid > div:first-child {
+    order: 1;
+  }
+
+  .about-story__image {
+    order: 2;
+  }
+
+  .about__image img {
+    height: 320px;
+  }
+
+  .about-story__image img {
+    height: 320px;
+  }
+
+  .benefits .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-visual {
+    padding: 8px 0 64px;
+  }
+
+  .about-visual__figure img {
+    height: 360px;
+  }
+
+  .finalcta {
+    padding: 64px 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .pagehero {
+    padding: 42px 0 46px;
+  }
+
+  .pagehero__content {
+    gap: 28px;
+  }
+
+  .pagehero__content h1 {
+    margin-bottom: 18px;
+  }
+
+  .pagehero__image img {
+    height: 280px;
+  }
+
+  .benefits,
+  .about-story {
+    padding: 52px 0;
+  }
+
+  .about__grid,
+  .about-story__grid {
+    gap: 30px;
+  }
+
+  .about__image img,
+  .about-story__image img {
+    height: 260px;
+  }
+
+  .section-heading {
+    margin-bottom: 34px;
+  }
+
+  .benefits .cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .benefits .card {
+    padding: 24px 22px;
+  }
+
+  .about-visual {
+    padding: 4px 0 52px;
+  }
+
+  .about-visual__figure img {
+    height: 260px;
+  }
+
+  .finalcta {
+    padding: 52px 0;
+  }
+}
