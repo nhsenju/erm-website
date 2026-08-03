@@ -5,8 +5,6 @@
   // CONFIG
   // ============================================================
 
-  const WEBHOOK_URL = "";
-
   window.dataLayer = window.dataLayer || [];
 
   const dl = (event, payload) => {
@@ -583,43 +581,6 @@
   // STATO CTA
   // ============================================================
 
-  function isFinalStepComplete() {
-    if (step !== total) {
-      return false;
-    }
-
-    const nome =
-      getValue("nome");
-
-    const telefono =
-      getValue("telefono");
-
-    const email =
-      getValue("email");
-
-    const privacy =
-      document.getElementById("privacy");
-
-    const nameValid =
-      !validateName(nome);
-
-    const phoneValid =
-      !validatePhone(telefono);
-
-    const emailValid =
-      !validateEmail(email);
-
-    const privacyValid =
-      !!privacy && privacy.checked;
-
-    return (
-      nameValid &&
-      phoneValid &&
-      emailValid &&
-      privacyValid
-    );
-  }
-
   function updateSubmitState() {
   if (step !== total) {
     btnNext.hidden = false;
@@ -1127,25 +1088,6 @@
             "Netlify Forms HTTP " +
               response.status
           );
-        }
-
-        // ========================================================
-        // WEBHOOK OPZIONALE
-        // ========================================================
-
-        if (WEBHOOK_URL) {
-          fetch(
-            WEBHOOK_URL,
-            {
-              method: "POST",
-              headers: {
-                "Content-Type":
-                  "application/json"
-              },
-              body:
-                JSON.stringify(payload)
-            }
-          ).catch(() => {});
         }
 
         // ========================================================
