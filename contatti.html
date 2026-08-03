@@ -15,10 +15,12 @@
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="/assets/favicon.ico" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 <script type="application/ld+json">
@@ -60,7 +62,14 @@
 
 <header class="site-header" id="siteHeader">
   <div class="wrap site-header__row">
-    <a href="/" class="logo"><img src="/assets/logo-ermetes.png" alt="Ermetes Multiservizi" width="728" height="208"</a>
+    <a href="/" class="logo">
+  <img
+    src="/assets/logo-ermetes.png"
+    alt="Ermetes Multiservizi"
+    width="728"
+    height="208"
+  >
+</a>
     <nav class="nav" aria-label="Principale">
       <ul class="nav__list" id="navList">
         <li><a href="/">Home</a></li>
@@ -109,9 +118,9 @@
         </div>
       </div>
 
-      <div style="margin-top:36px;text-align:center">
+      <div class="areas-section">
         <h2>Zone servite</h2>
-        <ul class="areas" style="justify-content:center">
+        <ul class="areas areas--center">
           <li>Trento</li>
           <li>Bolzano</li>
           <li>Rovereto</li>

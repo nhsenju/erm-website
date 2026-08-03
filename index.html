@@ -18,7 +18,7 @@
 <link rel="icon" href="/assets/favicon.ico" type="image/x-icons">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 <script type="application/ld+json">
@@ -51,8 +51,13 @@
 <header class="site-header" id="siteHeader">
   <div class="wrap site-header__row">
       <a href="/" class="logo">
-         <img src="/assets/logo-ermetes.png" alt="Ermetes Multiservizi" width="728" height="208">
-      </a>
+  <img
+    src="/assets/logo-ermetes.png"
+    alt="Ermetes Multiservizi"
+    width="728"
+    height="208"
+  >
+</a>
     <nav class="nav" aria-label="Principale">
       <ul class="nav__list" id="navList">
         <li><a href="/" aria-current="page">Home</a></li>
@@ -71,61 +76,95 @@
 <main id="main">
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="hero__copy">
-        <h1>Servizi di pulizia per case, uffici e auto a Trento e dintorni. <span>Senza pensieri.</span></h1>
-        <p class="hero__sub">Pulizie professionali e manutenzioni.</p>
-        <a href="#preventivo" class="btn btn--cta btn--lg" data-track="cta_hero">Chiedi il tuo preventivo oggi</a>
-        <a href="https://wa.me/39XXXXXXXXXX?text=Ciao%20ERMETES%2C%20vorrei%20avere%20informazioni%20e%20un%20preventivo."
-   class="btn btn--whatsapp btn--lg"
-   data-track="cta_whatsapp"
-   target="_blank"
-   rel="noopener"
-   aria-label="Contatta ERMETES su WhatsApp">
-  Scrivici su WhatsApp
-</a>
-        <ul class="trustlist">
-          <li>✔ Preventivo in giornata</li>
-          <li>✔ Sopralluogo gratuito</li>
-        </ul>
-      </div>
-        <div class="hero__signature">
-  <div class="signature__bar">
+<section class="hero">
+  <div class="wrap hero__grid">
 
-    <div class="signature__item">
-      <img src="/assets/optimized/before.webp" alt="Ambiente prima della pulizia" width="1000" height="667">
-      <span class="signature__label signature__label--before">
-        CASA
-      </span>
+    <div class="hero__copy">
+
+      <h1>
+        Servizi di pulizia per case, uffici e auto a Trento e dintorni.
+        <span>Senza pensieri.</span>
+      </h1>
+
+      <p class="hero__sub">
+        Pulizie professionali e manutenzioni.
+      </p>
+
+      <a
+        href="#preventivo"
+        class="btn btn--cta btn--lg"
+        data-track="cta_hero"
+      >
+        Chiedi il tuo preventivo oggi
+      </a>
+
+      <a
+        href="https://wa.me/39XXXXXXXXXX?text=Ciao%20ERMETES%2C%20vorrei%20avere%20informazioni%20e%20un%20preventivo."
+        class="btn btn--whatsapp btn--lg"
+        data-track="cta_whatsapp"
+        target="_blank"
+        rel="noopener"
+        aria-label="Contatta ERMETES su WhatsApp"
+      >
+        Scrivici su WhatsApp
+      </a>
+
+      <ul class="trustlist">
+        <li>✔ Preventivo in giornata</li>
+        <li>✔ Sopralluogo gratuito</li>
+      </ul>
+
     </div>
 
-    <div class="signature__item">
-      <img src="/assets/optimized/after.webp" alt="Ambiente dopo la pulizia" width="1000" height="667">
-      <span class="signature__label signature__label--after">
-        UFFICIO
-      </span>
+    <div class="hero__signature">
+
+      <div class="signature__bar">
+
+        <div class="signature__item">
+          <img
+            src="/assets/optimized/before.webp"
+            alt="Ambiente prima della pulizia"
+            width="1000"
+            height="667"
+          >
+          <span class="signature__label signature__label--before">
+            CASA
+          </span>
+        </div>
+
+        <div class="signature__item">
+          <img
+            src="/assets/optimized/after.webp"
+            alt="Ambiente dopo la pulizia"
+            width="1000"
+            height="667"
+          >
+          <span class="signature__label signature__label--after">
+            UFFICIO
+          </span>
+        </div>
+
+      </div>
+
+      <div class="signature__item">
+        <img
+          src="/assets/autolavaggio.webp"
+          alt="Autolavaggio professionale ERMETES MULTISERVIZI"
+          loading="lazy"
+          width="1440"
+          height="810"
+        >
+        <span class="signature__label signature__label--auto">
+          AUTO
+        </span>
+      </div>
+
     </div>
 
   </div>
+</section>
 
-  <div class="signature__item">
-  <img
-    src="/assets/autolavaggio.webp"
-    alt="Autolavaggio professionale ERMETES MULTISERVIZI"
-    loading="lazy"
-    width="1440"
-    height="810"
-  >
-
-  <span class="signature__label signature__label--auto">
-    AUTO
-  </span>
-</div>
-</div>
-  </section>
-
-  <!-- BENEFICI -->
+<!-- BENEFICI -->
   <section class="benefits">
     <div class="wrap">
       <h2>Perché scegliere noi</h2>
@@ -213,7 +252,7 @@
         <div class="progress__bar" id="progressBar"></div>
       </div>
 
-      <form id="leadForm" name="preventivo" method="POST" action="/successo.html" data-netlify="true" netlify-honeypot="website" novalidate>
+      <form id="leadForm" method="POST" action="/successo.html" data-netlify="true" netlify-honeypot="website" novalidate>
         <input type="hidden" name="form-name" value="preventivo">
         <input type="text" name="website" id="website" class="hp" tabindex="-1" autocomplete="off">
         <input type="hidden" name="utm_source" id="utm_source">

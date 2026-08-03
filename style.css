@@ -2076,3 +2076,70 @@ h1{
     padding: 52px 0;
   }
 }
+
+
+/* =========================================================
+   LAYOUT UTILITY
+   ========================================================= */
+
+.pagehero--center {
+  text-align: center;
+}
+
+.areas-section {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.areas--center {
+  justify-content: center;
+}
+
+/* ===== WIZARD CTA VISIBILITY ===== */
+
+.wizard__nav .btn.is-inactive {
+  opacity: 0.18;
+  pointer-events: none;
+  cursor: default;
+  filter: grayscale(1);
+  box-shadow: none;
+  transform: none;
+}
+
+.wizard__nav .btn.is-primary-active {
+  opacity: 1;
+  pointer-events: auto;
+  filter: none;
+}
+
+.wizard__nav .btn.is-hidden {
+  display: none !important;
+}
+
+/* ============================================================
+   WIZARD - VISIBILITÀ CTA
+   ============================================================ */
+
+.wizard__nav .btn--inactive {
+  opacity: 0.18;
+  filter: grayscale(1);
+  pointer-events: none;
+  cursor: default;
+  box-shadow: none;
+  transform: none;
+}
+
+.wizard__nav .btn--ready {
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* =========================================================
+   WIZARD — HIDDEN REALE DEI PULSANTI
+   ========================================================= */
+
+.wizard__nav .btn[hidden] {
+  display: none !important;
+}
