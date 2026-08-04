@@ -2163,8 +2163,12 @@ h1{
 
   padding: 0.22rem 0.72rem 0.24rem;
 
-  color: var(--hero-bg, #fff);
-  background: currentColor;
+  /*
+   * Bollino pieno nel colore principale del sito.
+   * La scritta resta bianca per garantire contrasto.
+   */
+  color: #fff;
+  background: #002E5D;
 
   font-family:
     Georgia,
@@ -2184,7 +2188,7 @@ h1{
   transform: rotate(-1.8deg);
 
   box-shadow:
-    2px 2px 0 rgba(0, 0, 0, 0.08);
+    2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
 /* Cartellino principale */
