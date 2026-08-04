@@ -2170,12 +2170,9 @@ h1{
   color: #fff;
   background: #002E5D;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: var(--font-body);
 
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
   font-style: italic;
   letter-spacing: 0.075em;
@@ -2209,23 +2206,26 @@ h1{
 
   background:
     linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.055),
-      rgba(255, 255, 255, 0)
+      135deg,
+      rgba(255, 255, 255, 0.10),
+      rgba(255, 255, 255, 0.025)
     );
 
-  border: 2px solid currentColor;
+  border: 1.5px solid currentColor;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 
   border-radius:
-    4px
     7px
-    5px
-    8px;
+    10px
+    8px
+    11px;
 
   /* Doppio bordo: effetto stampa/volantino */
   box-shadow:
-    4px 4px 0 -1px currentColor,
-    4px 4px 0 0 rgba(0, 0, 0, 0.055);
+    0 10px 24px rgba(0, 0, 0, 0.10),
+    3px 3px 0 -1px currentColor;
 
   transform: rotate(0.15deg);
 
@@ -2245,12 +2245,10 @@ h1{
   height: 1.85rem;
 
   border: 1.5px solid currentColor;
-  border-radius: 48% 52% 45% 55%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.055);
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: var(--font-body);
 
   font-size: 0.82rem;
   line-height: 1;
@@ -2270,13 +2268,11 @@ h1{
 
   margin-bottom: 0.08rem;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: var(--font-body);
 
-  font-size: 0.82rem;
-  font-style: italic;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 500;
   line-height: 1.15;
 
   opacity: 0.72;
@@ -2286,13 +2282,10 @@ h1{
 .hero__address-card strong {
   display: block;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: var(--font-body);
 
-  font-size: 1.08rem;
-  font-weight: 800;
+  font-size: 1.02rem;
+  font-weight: 750;
   line-height: 1.18;
 
   letter-spacing: 0.012em;
@@ -2321,13 +2314,10 @@ h1{
   right: 0.72rem;
   bottom: 0.5rem;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: var(--font-body);
 
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.65rem;
+  font-weight: 600;
   line-height: 1;
 
   transform: rotate(-8deg);
@@ -2390,8 +2380,8 @@ h1{
       rotate(-0.15deg);
 
     box-shadow:
-      5px 5px 0 -1px currentColor,
-      5px 5px 0 0 rgba(0, 0, 0, 0.06);
+      0 14px 30px rgba(0, 0, 0, 0.14),
+      4px 4px 0 -1px currentColor;
   }
 
   .hero__address:hover .hero__address-arrow {
