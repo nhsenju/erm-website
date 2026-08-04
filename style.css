@@ -2125,3 +2125,367 @@ h1{
 .wizard__nav .btn[hidden] {
   display: none !important;
 }
+
+/* ============================================================
+   HERO — ADDRESS ILLUSTRATED CALLOUT
+   ============================================================ */
+
+.hero__address {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 25rem;
+  margin-top: 1.45rem;
+
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+
+  cursor: pointer;
+
+  transform: rotate(-0.35deg);
+  transform-origin: left center;
+
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+/* Etichetta superiore — effetto volantino */
+.hero__address-label {
+  position: relative;
+  z-index: 3;
+
+  display: inline-block;
+
+  margin-left: 0.7rem;
+  margin-bottom: -0.15rem;
+
+  padding: 0.22rem 0.72rem 0.24rem;
+
+  color: var(--hero-bg, #fff);
+  background: currentColor;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.075em;
+  line-height: 1;
+
+  text-transform: uppercase;
+
+  border-radius: 2px 5px 3px 2px;
+
+  transform: rotate(-1.8deg);
+
+  box-shadow:
+    2px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Cartellino principale */
+.hero__address-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 5.4rem;
+
+  gap: 0.85rem;
+
+  padding: 0.95rem 3.15rem 0.9rem 0.9rem;
+
+  color: inherit;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0)
+    );
+
+  border: 2px solid currentColor;
+
+  border-radius:
+    4px
+    7px
+    5px
+    8px;
+
+  /* Doppio bordo: effetto stampa/volantino */
+  box-shadow:
+    4px 4px 0 -1px currentColor,
+    4px 4px 0 0 rgba(0, 0, 0, 0.055);
+
+  transform: rotate(0.15deg);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+/* Bollino decorativo */
+.hero__address-pin {
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 1.85rem;
+
+  width: 1.85rem;
+  height: 1.85rem;
+
+  border: 1.5px solid currentColor;
+  border-radius: 48% 52% 45% 55%;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.82rem;
+  line-height: 1;
+
+  transform: rotate(8deg);
+}
+
+/* Contenuto */
+.hero__address-content {
+  display: block;
+  min-width: 0;
+}
+
+/* "Ti aspettiamo in" */
+.hero__address-intro {
+  display: block;
+
+  margin-bottom: 0.08rem;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.15;
+
+  opacity: 0.72;
+}
+
+/* Indirizzo */
+.hero__address-card strong {
+  display: block;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.18;
+
+  letter-spacing: 0.012em;
+}
+
+/* Città */
+.hero__address-city {
+  display: block;
+
+  margin-top: 0.14rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.105em;
+  line-height: 1.1;
+
+  text-transform: uppercase;
+
+  opacity: 0.62;
+}
+
+/* Freccia disegnata */
+.hero__address-arrow {
+  position: absolute;
+
+  right: 0.72rem;
+  bottom: 0.5rem;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+
+  transform: rotate(-8deg);
+
+  transition:
+    transform 180ms ease;
+}
+
+/* Sottolineatura imperfetta */
+.hero__address-card::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: -7px;
+
+  height: 2px;
+
+  background: currentColor;
+
+  opacity: 0.3;
+
+  border-radius: 50%;
+
+  transform: rotate(0.7deg);
+}
+
+/* Seconda linea tipo stampa */
+.hero__address-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 1.1rem;
+  right: 3.8rem;
+  bottom: -10px;
+
+  height: 1px;
+
+  background: currentColor;
+
+  opacity: 0.14;
+
+  transform: rotate(-0.4deg);
+}
+
+/* Hover desktop */
+@media (hover: hover) and (pointer: fine) {
+  .hero__address:hover {
+    transform:
+      translateY(-2px)
+      rotate(0deg);
+  }
+
+  .hero__address:hover .hero__address-card {
+    transform:
+      translateX(1px)
+      rotate(-0.15deg);
+
+    box-shadow:
+      5px 5px 0 -1px currentColor,
+      5px 5px 0 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .hero__address:hover .hero__address-arrow {
+    transform:
+      translate(2px, -2px)
+      rotate(-8deg);
+  }
+}
+
+/* Focus accessibile */
+.hero__address:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 5px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .hero__address {
+    max-width: 27rem;
+    margin-top: 1.55rem;
+  }
+
+  .hero__address-card {
+    min-height: 5.55rem;
+
+    padding:
+      0.98rem
+      3.35rem
+      0.92rem
+      1rem;
+  }
+
+  .hero__address-card strong {
+    font-size: 1.12rem;
+  }
+
+  .hero__address-intro {
+    font-size: 0.86rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero__address {
+    max-width: 100%;
+    margin-top: 1.25rem;
+  }
+
+  .hero__address-label {
+    margin-left: 0.45rem;
+
+    padding:
+      0.2rem
+      0.6rem
+      0.22rem;
+
+    font-size: 0.64rem;
+  }
+
+  .hero__address-card {
+    min-height: 5.1rem;
+
+    gap: 0.65rem;
+
+    padding:
+      0.78rem
+      2.75rem
+      0.76rem
+      0.75rem;
+  }
+
+  .hero__address-pin {
+    flex-basis: 1.55rem;
+
+    width: 1.55rem;
+    height: 1.55rem;
+
+    font-size: 0.72rem;
+  }
+
+  .hero__address-intro {
+    font-size: 0.77rem;
+  }
+
+  .hero__address-card strong {
+    font-size: 0.98rem;
+  }
+
+  .hero__address-city {
+    font-size: 0.63rem;
+    letter-spacing: 0.085em;
+  }
+
+  .hero__address-arrow {
+    right: 0.55rem;
+    bottom: 0.42rem;
+
+    font-size: 1.55rem;
+  }
+}
