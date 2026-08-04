@@ -2438,7 +2438,7 @@ h1{
 @media (max-width: 600px) {
   .hero__address {
     max-width: 100%;
-    margin-top: 1.25rem;
+    margin-top: 2rem;
   }
 
   .hero__address-label {
