@@ -1,10 +1,2 @@
-node_modules/
-playwright-report/
-test-results/
-
-# Audit generati
-audit/backups/
-audit/visual/*.png
-
-audit/visual/visual-report.json
-audit/audit-report.json
+.backup-management/
+.backup-pre-final/
