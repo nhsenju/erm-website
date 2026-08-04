@@ -1048,38 +1048,55 @@
 
       try {
         const formData =
-          Object.assign(
-            {
-              "form-name":
-                "preventivo"
-            },
-            payload
+          new FormData();
+
+        formData.append(
+          "form-name",
+          "preventivo"
+        );
+
+        Object.entries(payload)
+          .forEach(
+            ([key, value]) => {
+              formData.append(
+                key,
+                value == null
+                  ? ""
+                  : String(value)
+              );
+            }
           );
 
-        const encoded =
-          Object.entries(formData)
-            .map(
-              ([key, value]) =>
-                encodeURIComponent(key) +
-                "=" +
-                encodeURIComponent(
-                  value == null
-                    ? ""
-                    : value
-                )
-            )
-            .join("&");
+        const privacy =
+          document.getElementById("privacy");
+
+        if (privacy && privacy.checked) {
+          formData.append(
+            "privacy",
+            "accepted"
+          );
+        }
+
+        const foto =
+          document.getElementById("foto");
+
+        if (
+          foto &&
+          foto.files &&
+          foto.files.length > 0
+        ) {
+          formData.append(
+            "foto",
+            foto.files[0]
+          );
+        }
 
         const response =
           await fetch(
             "/",
             {
               method: "POST",
-              headers: {
-                "Content-Type":
-                  "application/x-www-form-urlencoded"
-              },
-              body: encoded
+              body: formData
             }
           );
 
